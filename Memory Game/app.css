@@ -1,0 +1,90 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    background-image: url(Images/stacked-waves-haikei.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 1200px;
+    margin:auto;
+    padding: 50px;
+    justify-content: space-evenly;
+    font-family: 'Poppins', sans-serif;  
+
+    .header{
+        border: none;
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+        background-color: azure;
+        color: rgb(84, 122, 174);
+        border-radius: 15px;
+        box-shadow: 15px 10px 10px 0.2px rgba(46, 61, 73, 0.5);
+        text-align: center;
+        padding: 25px 50px;
+        font-size: 1.5rem;
+        margin-left: auto;
+    }
+    .startGame{     
+        font-size: 1.5rem;
+        width: 150px;
+        height: 70px;
+        border-radius: 25px;
+        background-color: rgb(106, 222, 106);
+        border: 2px solid rgb(106, 222, 106);
+        box-shadow: 15px 10px 10px 0.2px rgba(46, 61, 73, 0.2);
+        margin-left: 15%;
+        }
+
+    .startGame:hover{
+        cursor: pointer;
+        background-color: rgb(94, 198, 94);
+        border: none;
+        
+    }
+
+}
+
+.gameContainer{
+    /* border:2px solid green; */
+    background: linear-gradient(180deg, rgba(97,152,255,0.5) 31%, rgba(0,102,255,0.5) 89%);
+    box-shadow: 12px 15px 20px 0px rgba(46, 61, 73, 0.5);
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 900px;
+    width: 1200px;
+    margin: 0 auto;
+    gap: 2px;
+
+    .item{
+        display: flex;
+        flex-basis: 200px;
+        background-color: rgba(255, 255, 255,0.8);
+        border-radius: 15px;
+        box-shadow: 12px 15px 20px 0px rgba(46, 61, 73, 0.5);
+        width: 25%;
+        height: 20%;
+        align-self: center;    
+    }   
+    
+    >.item:after{
+        background-color: white;
+        transform: rotateY(180deg);
+	    transform-style: preserve-3d;
+	    transition: transform .3s; 
+    }
+}
+
